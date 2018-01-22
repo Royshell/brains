@@ -1,0 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 974px;
+  min-height: 510px;
+  height: 100vh;
+  width: 100%;
+  background: url('./assets/img/bg-image.png') no-repeat center;
+  background-size: cover;
+  image-rendering: optimizeSpeed;
+}
