@@ -1,8 +1,62 @@
-app-login-box {
+login-box {
+  width: 650px;
+  height: 380px;
+  padding-top: 20px;
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  border-radius: 5px;
 
-  .login-box {
-    width: 650px;
-    height: 400px;
-    background-color: #fff;
+  .login-title {
+    margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+  }
+
+  .logins {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    email-login, social-login {
+      width: calc(50% - 1px);
+    }
+  }
+
+  .sign-up {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 64px;
+    border-top: 1px solid #f1f1f2;;
+    border-bottom: 1px solid #f1f1f2;;
+
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #7800ff;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+    }
+  }
+
+  .nav-menu{
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      font-size: 14px;
+      color: #666666;
+    }
+
+    ul li {
+      padding: 0 8px;
+    }
   }
 }
+
+
