@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {LoginBoxComponent} from './components/login-box/login-box.component';
 import { EmailLoginComponent } from './components/email-login/email-login.component';
 import { SocialLoginComponent } from './components/social-login/social-login.component';
+import {LoginService} from './services/login.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SocialLoginComponent } from './components/social-login/social-login.com
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginService} from '../../services/login.service';
 
 @Component({
   selector: 'email-login',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmailLoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private LoginService: LoginService) { }
 
   ngOnInit() {
   }
-
+  
+  private onSubmit() {
+  }
 }
