@@ -1,7 +1,7 @@
 <div class="email-login-container">
     <div class="personal-details">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
+        <input type="email" placeholder="Email" [(ngModel)]="username">
+        <input type="password" placeholder="Password" [(ngModel)]="password">
     </div>
     <div class="remember-forgot">
         <label><input type="checkbox"> Remember Me</label><a href="/">Forgot Password?</a>

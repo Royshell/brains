@@ -5,7 +5,11 @@ import { AppComponent } from './app.component';
 import {LoginBoxComponent} from './components/login-box/login-box.component';
 import { EmailLoginComponent } from './components/email-login/email-login.component';
 import { SocialLoginComponent } from './components/social-login/social-login.component';
-import {LoginService} from './services/login.service';
+import {AuthenticationService} from './services/authentication.service';
+import {FormsModule} from '@angular/forms';
+import {UserService} from './services/user.service';
+import {AuthenticationGuard} from './guards/authentication.guard';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,9 +19,11 @@ import {LoginService} from './services/login.service';
     SocialLoginComponent
   ],
   imports: [
-    BrowserModule
+    HttpClientModule,
+    BrowserModule,
+    FormsModule
   ],
-  providers: [LoginService],
+  providers: [AuthenticationService, AuthenticationGuard, UserService, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
