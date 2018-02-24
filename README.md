@@ -4,11 +4,11 @@ Brains App
 
 ## Install
 
-In order to run app:
+In order to run the app:
 
 1) Download/fork the project
 2) Run `ng start`
-3) Login with username: admin and password: admin.
+3) Login with username: `admin` and password: `admin`.
 
 ## Development server
 
