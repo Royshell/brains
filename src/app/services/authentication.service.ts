@@ -8,7 +8,7 @@ export class AuthenticationService {
   constructor(private _http: HttpClient) { }
   
   public authenticateUser() {
-    //TODO POST Request
+    // TODO POST Request
   }
 
   public authenticateUserMock(user: User): boolean {

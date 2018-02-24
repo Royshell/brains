@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthenticationService} from '../../services/authentication.service';
-import {User} from '../../models/user.model';
-import {UserService} from '../../services/user.service';
+import {Router} from '@angular/router';
+import {AuthenticationService} from '../../../services/authentication.service';
+import {UserService} from '../../../services/user.service';
+import {User} from '../../../models/user.model';
 
 @Component({
   selector: 'email-login',
@@ -12,10 +13,10 @@ export class EmailLoginComponent implements OnInit {
   private username: string;
   private password: string;
 
-  constructor(private _authenticationService: AuthenticationService, private _userService: UserService) { }
+  constructor(private _authenticationService: AuthenticationService, private _userService: UserService,
+              private router: Router) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   
   private onSubmit() {
     const user: User = {
@@ -24,6 +25,8 @@ export class EmailLoginComponent implements OnInit {
     };
     if (this._authenticationService.authenticateUserMock(user)) {
       this._userService.setUserLoggedIn(true);
+      console.log('boom!');
+      this.router.navigate(['dashboard']);
     }
   }
 }
