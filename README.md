@@ -1,6 +1,14 @@
 # Brains
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
+Brains App
+
+## Install
+
+In order to run app:
+
+1) Download/fork the project
+2) Run `ng start`
+3) Login with username: admin and password: admin.
 
 ## Development server
 
