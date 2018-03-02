@@ -15,6 +15,7 @@ import {Routes, RouterModule} from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { TopBarComponent } from './components/dashboard/top-bar/top-bar.component';
 import { MainComponent } from './components/dashboard/main/main.component';
+import { TopRightComponent } from './components/dashboard/top-bar/top-right/top-right.component';
 
 const appRoutes: Routes = [
   {
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
     DashboardComponent,
     LoginComponent,
     TopBarComponent,
-    MainComponent
+    MainComponent,
+    TopRightComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

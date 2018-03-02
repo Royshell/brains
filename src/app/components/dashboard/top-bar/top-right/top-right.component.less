@@ -1,0 +1,43 @@
+top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+
+  .profile-section{
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  .profile-username {
+    margin-left: 10px;
+  }
+  .list-container {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid #F1F1F2;
+
+    ul {
+      display: none;
+      //transition: 2s easeIn;
+
+      :hover {
+        display: block;
+      }
+    }
+  }
+  .bell {
+    width: 28px;
+    height: 30px;
+    background: url('../../../../../assets/img/bell.png') no-repeat;
+  }
+}
