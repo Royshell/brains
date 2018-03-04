@@ -1,7 +1,14 @@
 main {
   display: flex;
   width: 100%;
+  justify-content: center;
   height: calc(~"100vh - 51px");
   background-color: #F1F1F2;
   box-shadow: inset  0px 18px 5px -15px rgba(0, 0, 0, 0.5);
+
+  .main-container {
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: 230px 100%;
+  }
 }
